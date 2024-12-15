@@ -1,1 +1,1 @@
-https://github.com/osssinnna/ono-tebe-nado
+https://github.com/osssinnna/ono-tebe-nado-fd
