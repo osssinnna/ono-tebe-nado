@@ -2,7 +2,8 @@
     padding: 92px 24px;
     display: grid;
     grid-template-columns: 3fr 1fr 3fr;
-    grid-template-rows: 1;
+    grid-template-rows: auto;
+
 }
 
 .header__menu {
@@ -13,17 +14,19 @@
     list-style: circle;
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: 31px;
 }
 
 .header__links-list-item {
+    font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 21.13px;
+    line-height: 24.3px;
     letter-spacing: 0.01em;
     text-align: left;
     white-space: nowrap;
     text-underline-position: under;
+    color: #000;
 }
 
 .header__links-list-item_no-bullet {
@@ -40,14 +43,19 @@
 
 .address {
     max-width: 240px;
+    color: #000;
     font-style: normal;
     font-size: 18px;
     font-weight: 400;
     line-height: 24.3px;
-    letter-spacing: 0.01em;
     text-underline-position: under;
     align-self: center;
     max-width: 240px;
+    white-space: nowrap;
+}
+
+address a {
+    letter-spacing: 0.01em;
 }
 
 .header__address {
@@ -55,11 +63,16 @@
 }
 
 .cover {
-    background-image: url("/ono-tebe-nado/images/cover.jpg");
-    height: 757px;
+    background-image: url("/images/cover.jpg");
+    max-height: 757px;
     background-size: cover;
-    background-position: -136px 0;
+    background-position: center;
     position: relative;
+    padding: 165px 50px 237px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 135px;
+
 }
 
 .overlay {
@@ -73,9 +86,8 @@
 }
 
 .cover__title {
-    margin: 165px 50px 237px 50px;
     width: 1000px;
-    position: absolute;
+    position: relative;
     z-index: 2;
     font-weight: 700;
     font-size: 100px;
@@ -83,17 +95,19 @@
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     text-transform: uppercase;
     letter-spacing: 0.3em;
 }
 
 .aligned-text_center {
     align-self: center;
+    line-height: 100px;
 }
 
 .aligned-text_right {
     align-self: end;
+    line-height: 100px;
 }
 
 .letter-spacing-extended {
@@ -105,15 +119,14 @@
 }
 
 .cover__description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0 0 51px 78px;
+    position: relative;
     z-index: 3;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 79px;
     align-items: center;
+    white-space: nowrap;
+    margin-left: 28px;
 }
 
 .cover__description-text {
@@ -122,14 +135,14 @@
     line-height: 28px;
     text-transform: uppercase;
     color: white;
-    margin-right: 79px;
     word-spacing: 0.85em;
 
 }
 
 .bet-button {
+
     border: solid 1px white;
-    padding: 12px 32px;
+    padding: 11px 31px;
     text-align: center;
     background-color: transparent;
     color: white;
@@ -142,7 +155,6 @@
 
 .lots {
     padding: 179px 24px 146px 24px;
-    border-bottom: red 1px solid;
 }
 
 .lots__heading {
@@ -186,15 +198,15 @@
 }
 
 .card_type_film {
-    background-image: url("/ono-tebe-nado/images/card-lot-01.jpg");
+    background-image: url("/images/card-lot-01.jpg");
 }
 
 .card_type_book {
-    background-image: url("/ono-tebe-nado/images/card-lot-02.jpg");
+    background-image: url("/images/card-lot-02.jpg");
 }
 
 .card_type_picture {
-    background-image: url("/ono-tebe-nado/images/card-lot-03.jpg");
+    background-image: url("/images/card-lot-03.jpg");
 }
 
 .card__title {
@@ -246,8 +258,11 @@
 }
 
 .about__column-right {
-    margin-top: 133px;
+    margin-top: 136px;
     margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .about__title {
@@ -255,31 +270,23 @@
     font-weight: 700;
     line-height: 46.96px;
     text-transform: uppercase;
-
+    margin-bottom: 76px;
 }
 
 .about__text {
+
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
 }
 
-.first-paragraph {
-    margin-top: 100px;
-    margin-bottom: 24px;
-    letter-spacing: 0.01em;
-}
-
 .footer {
     padding: 180px 50px 88px 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    gap: 185px;
+    grid-template-columns: 240px 1fr 1fr;
     column-gap: 180px;
-}
-
-.footer__address {
-    margin: 0;
-    width: 240px;
+    align-items: start;
 }
 
 .footer__menu-list {
@@ -291,6 +298,7 @@
     font-weight: 400;
     line-height: 21.13px;
     text-align: center;
+    text-underline-position: under;
 }
 
 .footer__menu-link_active {
