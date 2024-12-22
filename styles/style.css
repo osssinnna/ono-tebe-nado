@@ -50,7 +50,6 @@
     line-height: 24.3px;
     text-underline-position: under;
     align-self: center;
-    max-width: 240px;
     white-space: nowrap;
 }
 
@@ -64,15 +63,14 @@ address a {
 
 .cover {
     background-image: url("/images/cover.jpg");
-    max-height: 757px;
+    min-height: 757px;
     background-size: cover;
     background-position: center;
     position: relative;
-    padding: 165px 50px 237px 50px;
+    padding: 165px 50px 51px 50px;
     display: flex;
     flex-direction: column;
     gap: 135px;
-
 }
 
 .overlay {
